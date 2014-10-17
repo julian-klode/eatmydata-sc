@@ -1,0 +1,6 @@
+eatmydata-sc -- A non-portable eatmydata replacement using seccomp
+==================================================================
+eatmydata-sc is similar to eatmydata, a tool to disable file syncing. It is
+implemented using seccomp-bpf and disables all explicit sync()-like calls.
+
+It does not support the open() call with O_SYNC parameters or similar.
